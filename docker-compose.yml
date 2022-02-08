@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jupyter:
+    image: jupyter/scipy-notebook:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
+    stdin_open: true
+    tty: true
